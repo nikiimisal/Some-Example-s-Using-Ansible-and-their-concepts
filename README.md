@@ -184,4 +184,252 @@ ok=2
 
 ---
 
+## Example 3 - This playbook is used to create a directory named aws inside /home/ec2-user on the local machine using Ansible automation.
+
+```
+---
+
+- name: Create a folder inside /home/ec2-user/aws
+  hosts: localhost
+  tasks:
+    - name: Create aws directory
+      ansible.builtin.file:
+        path: /home/ec2-user/aws
+        state: directory
+        mode: 0700                             # starting 0 means unmask  1 means mask
+```
+
+
+<p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+##  Example 4 - This playbook copies a file named ansible.txt from /root directory to /home/ec2-user/aws on the local machine.
+
+```
+---
+- name: copy file from one directory to another
+  hosts: localhost
+  tasks:
+  - name: copy file from /root/ansible.txt to /home/ec2-user/aws/
+    ansible.builtin.copy:
+      src: /root/ansible.txt
+      dest: /home/ec2-user/aws/ansible.txt
+```
+
+<p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+
+---
+ ##  Example  5  - This playbook installs the `tree` package on the local machine using Ansible.
+
+```
+---
+- name: install tree package
+  hosts: localhost
+  tasks:
+  - name: install tree
+    ansible.builtin.dnf:
+      name: tree  # package name
+      state: present # to install any software
+```
+
+<p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+##  Example  6  - This playbook installs the Apache HTTPD server, starts and enables the service, and deploys a simple `index.html` webpage on the local machine.
+
+
+
+```
+---
+- name: install ,start, enable httpd
+  hosts: localhost
+  become: yes # it assign sudo privileges
+  tasks:
+  # install httpd
+  - name: install httpd
+    ansible.builtin.dnf:
+      name: httpd
+      state: present
+  # start and enabled httpd
+  - name: start and enabled httpd
+    ansible.builtin.systemd_service:
+      name: httpd
+      state: started
+      enabled: true
+  # deploy index.html
+  - name: deploy index.html file
+    ansible.builtin.copy:
+     dest: /var/www/html/index.html
+     content: |
+      <h1>welcome to my httpd website</h1>
+```
+
+<p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+
+---
+
+##  Example  7  - Here is the same previous example, but using NGINX instead of HTTPD
+
+> If httpd (Apache) is already running, then we must stop it before starting nginx, because both use port 80.
+
+```
+---
+- name: install ,start, enable httpd
+  hosts: localhost
+  become: yes # it assign sudo privileges
+  tasks:
+  # install httpd
+  - name: install httpd
+    ansible.builtin.dnf:
+      name: httpd
+      state: absent     # ------------------     -----------------> changes  not needed ..but you want delete the softewae so run this
+  # start and enabled httpd
+  - name: start and enabled httpd
+    ansible.builtin.systemd_service:
+      name: httpd
+      state: stopped    #------------------     -----------------> changes
+      enabled: false    # ------------------     -----------------> changes
+  # deploy index.html
+  - name: deploy index.html file
+    ansible.builtin.copy:
+     dest: /var/www/html/index.html
+     content: |
+      <h1>welcome to my httpd website</h1>
+```
+●  Run this file &
+●  Check whether it has been uninstalled or not.
+
+```
+ansible-playbook httpd_install.yml --syntax-check
+ansible-playbook httpd_install.yml
+sudo systemctl httpd status
+```
+
+Now install NGINX.
+```
+---
+- name: nginx install
+  hosts: localhost
+  tasks:
+  - name: install nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: present
+  - name: start and enable nginx
+    ansible.builtin.systemd_service:
+      name: nginx
+      state: started
+      enabled: true
+  - name : deploy index.html
+    ansible.builtin.copy:
+      dest: /usr/share/nginx/html/index.html
+      content: |
+        <h1> welcome to my nginx server</h1>
+```
+
+
+---
+
+##  Example  8  - This Ansible playbook installs and configures a complete LAMP stack (Linux, Apache, MariaDB, PHP) on an Amazon Linux system and deploys a PHP test page.
+
+
+```
+#lamp -> amazon linux->
+#httpd, mariadb105-server , mariadb, php, php-fpm
+---
+- name: install lamp in amazon linux
+  hosts: localhost
+  become: yes
+  tasks:
+  # install httpd
+  - name: install httpd package
+    ansible.builtin.dnf:
+      name: httpd
+      state: present
+  # install mariadb
+  - name: install mariadb package
+    ansible.builtin.dnf:
+      name: mariadb105-server
+      state: present
+  # install php
+  - name: install php package
+    ansible.builtin.dnf:
+      name:
+       - php
+       - php-fpm
+      state: present
+  # start httpd
+  - name: start and enable httpd
+    ansible.builtin.systemd_service:
+      name: httpd
+      state: started
+      enabled: true
+  # start mariadb
+  - name: start and enable mariadb
+    ansible.builtin.systemd_service:
+      name: mariadb
+      state: started
+      enabled: true
+  # start php
+  - name: start and enable php
+    ansible.builtin.systemd_service:
+      name: php-fpm
+      state: started
+      enabled: true
+  # deploy php
+  - name: deploy php
+    ansible.builtin.copy:
+     dest: /var/www/html/index.php
+     content: |
+      <?php
+      phpinfo();
+      ?>
+```
+
+After running this script, check in the browser by searching and see whether the output is displayed or not.
+
+```
+<public_ip>/index.php
+```
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
