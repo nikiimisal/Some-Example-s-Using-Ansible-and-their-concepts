@@ -1,3 +1,33 @@
+## 🚀 Quick Navigation
+
+- [Create Shortcut](#⚡-Create-a-Shortcut-(Alias)-for-Ansible-Playbook  )
+  
+
+
+|                                           [Example's](#)                                     |                                                                                                                                          
+|------------------------------|---------------------------------------------------------------|
+
+
+|    [1. Ping Playbook (Easy & Beginner Friendly)](#  Example-1–Ping-Playbook-(-Easy-&-Beginner-Friendly-)-🧠-✨-) <br>  [Example's](#) <br>  [Example's](#) <br>  [Example's](#) <br>  [Example's](#) <br>|                            |                                                                                                                         
+
+
+
+
+## 🚀 Quick Navigation
+
+- [Example 1 – Ping Playbook](#example-1---ping-playbook)
+- [Example 2 – Create File](#example-2---create-file-using-ansible)
+- [Example 3 – Create Directory](#example-3---create-directory-using-ansible)
+- [Example 4 – Copy File](#example-4---copy-file-using-ansible)
+- [Example 5 – Install Tree](#example-5---install-tree-package)
+- [Example 6 – Install Apache](#example-6---install-apache-httpd)
+- [Example 7 – Install NGINX](#example-7---install-nginx)
+- [Example 8 – LAMP Stack](#example-8---lamp-stack-setup)
+- [Example 9 – Dynamic LEMP](#example-9---dynamic-lemp-stack-using-variables)
+- [Example 10 – LEMP → LAMP](#example-10---switch-from-lemp-to-lamp)
+
+
+
 <h1>⚡ Create a Shortcut (Alias) for Ansible Playbook  </h1>
 
 - If you do not want to type the full command every time,  
