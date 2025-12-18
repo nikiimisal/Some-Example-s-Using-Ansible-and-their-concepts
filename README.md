@@ -23,21 +23,18 @@
 
 
 
-|                    Example's                                           |                                                                                                      
-|------------------------------|---------------------------------------------------------------|
-
-|    - [Example 1 – Ping Playbook](#example-1)<br>
-- [Example 2 – Create Folder](#example-2)<br>
-- [Example 3 – Create Directory](#example-3)<br>
-- [Example 4 – Copy File](#example-4)<br>
-- [Example 5 – Install Tree](#example-5) <br>   |       - [Example 6 – Install Apache](#example-6)<br>
-- [Example 7 – NGINX Instead of HTTPD](#example-7)<br>
-- [Example 8 – LAMP Stack](#example-8)<br>
-- [Example 9 – Dynamic LEMP](#example-9)<br>
-- [Example 10 – Switch LEMP to LAMP](#example-10)<br>
-                         | 
-
-
+| Examples | Examples |
+|--------|----------|
+| - [Example 1 – Ping Playbook](#example-1)<br>  
+  - [Example 2 – Create Folder](#example-2)<br>  
+  - [Example 3 – Create Directory](#example-3)<br>  
+  - [Example 4 – Copy File](#example-4)<br>  
+  - [Example 5 – Install Tree](#example-5) |  
+  - [Example 6 – Install Apache](#example-6)<br>  
+  - [Example 7 – NGINX Instead of HTTPD](#example-7)<br>  
+  - [Example 8 – LAMP Stack](#example-8)<br>  
+  - [Example 9 – Dynamic LEMP](#example-9)<br>  
+  - [Example 10 – Switch LEMP to LAMP](#example-10) |
 
 
 
