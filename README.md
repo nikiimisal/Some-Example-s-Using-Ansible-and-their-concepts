@@ -2,7 +2,7 @@
 
 
   
-
+- [Create Shortcut](#example-0)
 
 <table>
   <thead>
@@ -31,15 +31,14 @@
   </tbody>
 </table>
 
-- [Create Shortcut](#example-0)
+- [Inventroy](#example-11)
 
   <br>
   
 <table>
   <thead>
     <tr>
-      <th>Example's </th>
-      <th>.</th>
+      <th>Example </th>
     </tr>
   </thead>
   <tbody>
