@@ -2,7 +2,8 @@
 
 - [Create Shortcut](#example-0)
   
-## 🚀 Quick Navigation
+<br>
+<br>  
 
 - [Example 1 – Ping Playbook](#example-1)
 - [Example 2 – Create Folder](#example-2)
@@ -23,20 +24,35 @@
 
 
 
-## 🚀 Quick Navigation
+<h2>🚀 Quick Navigation</h2>
 
-| Examples (1–5) | Examples (6–10) |
-|----------------|----------------|
-| [Example 1 – Ping Playbook](#example-1)<br>
-  [Example 2 – Create Folder](#example-2)<br>
-  [Example 3 – Create Directory](#example-3)<br>
-  [Example 4 – Copy File](#example-4)<br>
-  [Example 5 – Install Tree](#example-5) | 
-  [Example 6 – Install Apache](#example-6)<br>
-  [Example 7 – NGINX Instead of HTTPD](#example-7)<br>
-  [Example 8 – LAMP Stack](#example-8)<br>
-  [Example 9 – Dynamic LEMP](#example-9)<br>
-  [Example 10 – Switch LEMP to LAMP](#example-10) |
+<table>
+  <thead>
+    <tr>
+      <th>Examples (1–5)</th>
+      <th>Examples (6–10)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <a href="#example-1">Example 1 – Ping Playbook</a><br>
+        <a href="#example-2">Example 2 – Create Folder</a><br>
+        <a href="#example-3">Example 3 – Create Directory</a><br>
+        <a href="#example-4">Example 4 – Copy File</a><br>
+        <a href="#example-5">Example 5 – Install Tree</a>
+      </td>
+      <td>
+        <a href="#example-6">Example 6 – Install Apache</a><br>
+        <a href="#example-7">Example 7 – NGINX Instead of HTTPD</a><br>
+        <a href="#example-8">Example 8 – LAMP Stack</a><br>
+        <a href="#example-9">Example 9 – Dynamic LEMP</a><br>
+        <a href="#example-10">Example 10 – Switch LEMP to LAMP</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
