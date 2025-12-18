@@ -15,7 +15,7 @@
 
 ## 🚀 Quick Navigation
 
-- [Example 1 – Ping Playbook](#example-1---ping-playbook)
+- [Example 1 – Ping Playbook](#example-1)
 - [Example 2 – Create File](#example-2---create-file-using-ansible)
 - [Example 3 – Create Directory](#example-3---create-directory-using-ansible)
 - [Example 4 – Copy File](#example-4---copy-file-using-ansible)
