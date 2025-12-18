@@ -33,8 +33,6 @@
 
 - [Inventroy](#example-11)
 
-  <br>
-  
 <table>
   <thead>
     <tr>
