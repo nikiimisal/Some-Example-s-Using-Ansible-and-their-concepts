@@ -2,7 +2,7 @@
 
 
   
-- [Create Shortcut](#example-0)
+- [Create Shortcut's](#example-0)
 
 <table>
   <thead>
