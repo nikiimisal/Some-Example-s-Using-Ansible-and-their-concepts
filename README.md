@@ -1,32 +1,28 @@
 ## 🚀 Quick Navigation
 
-- [Create Shortcut](#⚡-Create-a-Shortcut-(Alias)-for-Ansible-Playbook  )
+- [Create Shortcut](#example-0)
   
-
-
-|                                           [Example's](#)                                     |                                                                                                                                          
-|------------------------------|---------------------------------------------------------------|
-
-
-|    [1. Ping Playbook (Easy & Beginner Friendly)](#  Example-1–Ping-Playbook-(-Easy-&-Beginner-Friendly-)-🧠-✨-) <br>  [Example's](#) <br>  [Example's](#) <br>  [Example's](#) <br>  [Example's](#) <br>|                            |                                                                                                                         
-
-
-
-
 ## 🚀 Quick Navigation
 
 - [Example 1 – Ping Playbook](#example-1)
-- [Example 2 – Create File](#example-2---create-file-using-ansible)
-- [Example 3 – Create Directory](#example-3---create-directory-using-ansible)
-- [Example 4 – Copy File](#example-4---copy-file-using-ansible)
-- [Example 5 – Install Tree](#example-5---install-tree-package)
-- [Example 6 – Install Apache](#example-6---install-apache-httpd)
-- [Example 7 – Install NGINX](#example-7---install-nginx)
-- [Example 8 – LAMP Stack](#example-8---lamp-stack-setup)
-- [Example 9 – Dynamic LEMP](#example-9---dynamic-lemp-stack-using-variables)
-- [Example 10 – LEMP → LAMP](#example-10---switch-from-lemp-to-lamp)
+- [Example 2 – Create Folder](#example-2)
+- [Example 3 – Create Directory](#example-3)
+- [Example 4 – Copy File](#example-4)
+- [Example 5 – Install Tree](#example-5)
+- [Example 6 – Install Apache](#example-6)
+- [Example 7 – NGINX Instead of HTTPD](#example-7)
+- [Example 8 – LAMP Stack](#example-8)
+- [Example 9 – Dynamic LEMP](#example-9)
+- [Example 10 – Switch LEMP to LAMP](#example-10)
 
 
+- [Inventory](#example-11)
+  
+- [Example 1 - Optimized Ansible Playbook to Install LEMP Stack on Target Servers](#example-12)
+
+
+
+<a id="example-0"></a>
 
 <h1>⚡ Create a Shortcut (Alias) for Ansible Playbook  </h1>
 
@@ -79,7 +75,6 @@ This makes working with Ansible faster and easier 🚀😄
 <h1>📘 Ansible Example's</h1>
 
 <a id="example-1"></a>
-##   Example  1 – Ping Playbook (Easy & Beginner Friendly) 🧠✨
 
 ##   Example  1 – Ping Playbook (Easy & Beginner Friendly) 🧠✨
 
@@ -197,6 +192,8 @@ ok=2
 
 ---
 
+<a id="example-2"></a>
+
 ##  Ansible Example  2 –Create a folder using Ansible
 
 ```
@@ -216,6 +213,8 @@ ok=2
 </p>
 
 ---
+
+<a id="example-3"></a>
 
 ## Example 3 - This playbook is used to create a directory named aws inside /home/ec2-user on the local machine using Ansible automation.
 
@@ -239,6 +238,8 @@ ok=2
 
 ---
 
+<a id="example-4"></a>
+
 ##  Example 4 - This playbook copies a file named ansible.txt from /root directory to /home/ec2-user/aws on the local machine.
 
 ```
@@ -258,6 +259,9 @@ ok=2
 
 
 ---
+
+<a id="example-5"></a>
+
  ##  Example  5  - This playbook installs the `tree` package on the local machine using Ansible.
 
 ```
@@ -276,6 +280,8 @@ ok=2
 </p>
 
 ---
+
+<a id="example-6"></a>
 
 ##  Example  6  - This playbook installs the Apache HTTPD server, starts and enables the service, and deploys a simple `index.html` webpage on the local machine.
 
@@ -312,6 +318,8 @@ ok=2
 
 
 ---
+
+<a id="example-7"></a>
 
 ##  Example  7  - Here is the same previous example, but using NGINX instead of HTTPD
 
@@ -374,6 +382,8 @@ Now install NGINX.
 
 
 ---
+
+<a id="example-8"></a>
 
 ##  Example  8  - This Ansible playbook installs and configures a complete LAMP stack (Linux, Apache, MariaDB, PHP) on an Amazon Linux system and deploys a PHP test page.
 
@@ -440,6 +450,8 @@ After running this script, check in the browser by searching and see whether the
 
 ---
 
+<a id="example-9"></a>
+
 ##  Example  9  - Dynamic LEMP Stack Setup with Ansible (Using Variables)
 
 
@@ -505,6 +517,8 @@ Verify if the code has executed successfully by opening the IP address in a brow
 
 ---
 
+<a id="example-10"></a>
+
 ##  Example  10  - Switch from lemp to lamp with php
 
 ```
@@ -564,6 +578,8 @@ Verify if the code has executed successfully by opening the IP address in a brow
 
 
 ---
+
+<a id="example-11"></a>
 
 # Inventory.
 
@@ -829,6 +845,7 @@ Same playbook → different environments 🔥
 
 #  Example's
 
+<a id="example-12"></a>
 
 ##  Example  1 - Optimized Ansible Playbook to Install LEMP Stack on Target Servers
 
