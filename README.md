@@ -1207,7 +1207,7 @@ ansible-playbook nginx.yml -i inventory.ini
 After running this, check the output.
 
 <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/Screenshot%202025-12-21%20085328.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 ---
@@ -1215,7 +1215,7 @@ After running this, check the output.
 After confirming the output, change the port number from `80` to `81`. This will cause the application to fail and return an error.
 
 <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/Screenshot%202025-12-20%20233823.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 <br>
@@ -1223,7 +1223,22 @@ After confirming the output, change the port number from `80` to `81`. This will
 This is where the use of handlers comes in. It is a concept used to manage such changes.<br>
 So next example be using handler's
 
+<br>
+<br>
 
+
+
+When content is written using {{ inventory_hostname }}, the output displays the IP address.
+
+<p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/Screenshot%202025-12-21%20085549.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+Output :
+
+<p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/Screenshot%202025-12-21%20085455.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+</p>
 ---
 
 <a id="example-15"></a>
