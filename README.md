@@ -1212,7 +1212,7 @@ After running this, check the output.
 
 ---
 
-After confirming the output, change the port number from 80 to 81. This will cause the application to fail and return an error.
+After confirming the output, change the port number from `80` to `81`. This will cause the application to fail and return an error.
 
 <p align="center">
   <img src="" width="500" alt="Initialize Repository Screenshot">
@@ -1305,7 +1305,7 @@ inventry.ini
 51.21.246.156 ansible_user=ec2-user ansible_ssh_private_key_file=/home/ec2-user/server1.pem
 ```
 
-First, run this file once. After it runs successfully, change the port from 80 to 81 and run it again to verify whether the handler is working properly.
+First, run this file once. After it runs successfully, change the port from `80` to `81` and run it again to verify whether the handler is working properly.
 
 ---
 ---
