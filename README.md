@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/875615bd-0b3a-4c04-abbd-e55bdb1af73b" /><h3>🚀 Quick Navigation</h3>
+<h3>🚀 Quick Navigation</h3>
 
 
   
@@ -85,6 +85,8 @@
   </tbody>
 </table>
 
+- [Github & Ansible Code-Push, Pull related](#example-19)
+ 
 ---
 ---
 ---
@@ -1213,6 +1215,7 @@ Example:
 Variables created inside loops or using `set_fact` can also be dynamic.
 
 Example:
+
 ```
 - name: Set dynamic variable
   set_fact:
@@ -1683,35 +1686,65 @@ file_path: /var/www/html/
   <img src="" width="500" alt="Initialize Repository Screenshot">
 </p>
 
+---
+
+<a id="example-19"></a>
+
+<h2>Github & Ansible Code push ,pull</h2>
+
+> Now we will push the code to GitHub and then upload it to Ansible Galaxy.
 
 
 
 
 
+| **Create Repo(Master)**    | **connect Github**          |
+|--------------------------------|------------------------------------|
+| ![VS]() | ![AWS]() |
+
+
+| **Github-Consol**    |
+|--------------------------------|
+| ![VS]() |
 
 
 
+| **Git Lifecycle**    | **Git Lifecycle**          |
+|--------------------------------|------------------------------------|
+| ![VS]() | ![AWS]() |
+
+
+| **Git Push**    | **For Git Push -Create access Token**          |   **access token**   |  
+|--------------------------------|------------------------------------|------------------------------------|
+| ![VS]() | ![AWS]() | ![AWS]() |
+
+
+| **Git-Hub Repo**    | **Git Lifecycle**          |
+|--------------------------------|------------------------------------|
+| ![VS]() | ![AWS]() |
+
+
+-  We have successfully pushed the code to GitHub. Now we will upload the role to Ansible Galaxy.
+
+
+| **Terminal**    | **Ansible-Galaxy token**          |
+|--------------------------------|------------------------------------|
+| ![VS]() | ![AWS]() |
 
 
 
+Ansibale Galaxy
+  <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+  </p>
 
 
+-  We have successfully pushed the code to Ansible Galaxy. Now let’s see how to pull it from there.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+| **Terminal**    | *.yml file**          |
+|--------------------------------|------------------------------------|
+| ![VS]() | ![AWS]() |
 
 
 
