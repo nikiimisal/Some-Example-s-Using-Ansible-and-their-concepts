@@ -1767,9 +1767,9 @@ We need to initialize an Ansible Galaxy role.
 
 
 
-| **Terminal**    | **Repo**          |
-|--------------------------------|------------------------------------|
-| ![VS](https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-25%20192949.png?raw=true) | ![AWS](https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-25%20192457.png?raw=true) |
+| **Repo**          |
+|------------------------------------|
+| ![AWS](https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-25%20192457.png?raw=true) |
 
 
 
@@ -1844,23 +1844,69 @@ With Ansible Vault:
 
 >>Below are a few screenshots along with examples and notes to clearly demonstrate the concept and help build your basic understanding.
 
+**If we want to view or access data in a secure way, we create a password and use that password to gain access.**<br>
+**This is called Ansible Vault.**
 
 
+So now, we will create a password.
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-27%20145537.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+  </p>
 
 
+If you wan see all flags
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-27%20145724.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+  </p>
 
 
+We created the password in order to encrypt the `inventory.ini` file. <br>
+Now we will encrypt the `inventory.ini` file using Ansible Vault.
 
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-27%20150739.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+  </p>
+
+  
+We can also decrypt the encrypted file using a command and view the password.<br>
+But if you run the decrypt command, not only you but any other user can also see the Data.
 
 
+This is Bad practices But i will show how to do it
 
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-27%20150801.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+  </p>
+
+Insted of that use this command
 
 
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-27%20150912.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+  </p>
+
+We can view the file data directly by providing the password, but we have to enter the password every time.<br>
+This flag has a drawback: we need to copy and paste the password each time.<br>
+Instead of that, we can pass a password file directly, so there is no need to copy the password—the file uses it automatically.<br>
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-27%20151234.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+  </p
+
+If you want to edit a hidden (encrypted) file…
+
+ <p align="center">
+  <img src="https://github.com/nikiimisal/Some-Example-s-Using-Ansible/blob/main/img/kkkkkkkk/Screenshot%202025-12-27%20151731.png?raw=true" width="500" alt="Initialize Repository Screenshot">
+  </p>
 
 
-
+---
+---
+---
 
 
 
