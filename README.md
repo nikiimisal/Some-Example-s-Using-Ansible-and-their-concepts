@@ -85,7 +85,7 @@
   </tbody>
 </table>
 
-- [Github & Ansible Code-Push, Pull related](#example-19)
+- [Github & Ansible Code-Push, Pull related ( Ansible Galaxy)](#example-19)
 - [Ansible Vault  & How to use](#example-20)
  
 ---
